@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:03 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel='icon' href='demo/img/logo-files/fav-icon.png' type='image/x-icon'/ >
+	<title>RevenueSure | Adverts</title>
+
+
+		<!-- icon fonts -->
+
+		<link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+
+		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_1.css">
+		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_2.css">
+		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_3.css">
+		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_4.css">
+
+		<!-- Vendor styles -->
+		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
+        <link rel="stylesheet" href="vendors/bootstrap-select/css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="css/flaticon-font/flaticon.css">
+
+        <link rel="stylesheet" href="vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="vendors/jquery-scrollbar/jquery.scrollbar.css">
+        <link rel="stylesheet" href="vendors/fullcalendar/fullcalendar.min.css">
+        <link rel="stylesheet" href="vendors/select2/css/select2.min.css">
+        <link rel="stylesheet" href="vendors/dropzone/dropzone.css">
+        <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css">
+        <link rel="stylesheet" href="vendors/trumbowyg/ui/trumbowyg.min.css">
+        <link rel="stylesheet" href="vendors/flatpickr/flatpickr.min.css" />
+        <link rel="stylesheet" href="vendors/rateyo/jquery.rateyo.min.css">
+        <link rel="stylesheet" href="vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="css/app.min.css">
+	
+    </head>
+
+    <body data-ma-theme="green">
+        <main class="main">
+            <div class="page-loader">
+                <div class="page-loader__spinner">
+                    <svg viewBox="25 25 50 50">
+                        <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+                </div>
+				<span class="powerd-container">
+					<img src="demo/img/logo-files/revenue-sure.png">
+					<strong>A product of Nouveta LTD</strong>
+				</span>
+            </div>
+
+             <header class="header">
+                <div class="navigation-trigger hidden-xl-up" data-ma-action="aside-open" data-ma-target=".sidebar">
+                    <div class="navigation-trigger__inner">
+                        <i class="navigation-trigger__line"></i>
+                        <i class="navigation-trigger__line"></i>
+                        <i class="navigation-trigger__line"></i>
+                    </div>
+                </div>
+                <div class="header__logo hidden-sm-down">
+					<a href="index.html"><img class="the-logo" src="demo/img/logo-files/fav-icon.png"></a>
+					<h1>
+                        <a href="index.html" class="mb-3">Adverts Dashboard</a>
+                        <p class="mb-0 text-white font-weight-light text-capitalize">RevenueSure</p>
+                    </h1>
+                </div>
+                <form class="search">
+                    <div class="search__inner">
+                        <input type="text" class="search__text" placeholder="Search site">
+                        <i class="zmdi zmdi-search search__helper" data-ma-action="search-close"></i>
+                    </div>
+                </form>
+				
+				<ul class="top-nav">
+                    <li class="hidden-xl-up"><a href="#" data-ma-action="search-open"><i class="zmdi zmdi-search"></i></a></li>
+					
+					<li data-toggle="tooltip" data-original-title="Time logged in" class=" top-nav__notifications p-0 m-0">
+                        <a href="#" data-toggle="dropdown"  class="top-nav__notify min-width-15px" >
+                            <i class="zmdi zmdi-time"></i>
+                        </a>
+                        
+					</li>
+					
+					<li data-toggle="tooltip" data-original-title="Time logged in " class="">
+                        <a href="#" data-toggle="dropdown"  class="" >
+                            3 min
+                        </a>
+                       
+					</li>
+					
+                    <li class="ml-5" >
+                        <a href="new-parent.html" data-toggle="tooltip" data-original-title="Tasks completed" >
+                            <i class="flaticon-pulse"></i><span class="mx-3">22</span>
+                        </a>
+                    </li>
+                </ul>
+
+                
+            </header>
+
+
+             <aside class="sidebar">
+                <div class="scrollbar-inner">
+                    <div class="user">
+                        <div class="user__info" data-toggle="dropdown">
+                           <div class="avatar-char bg-warning text-black mr-3 font-weight-bold">JM</div>
+                            <div>
+                                <div class="user__name">John Mwakili</div>
+                                <div class="user__email">john@gmail.com</div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="my-profile.html">View Profile</a>
+                            <a class="dropdown-item d-none" href="#">Settings</a>
+                            <a class="dropdown-item" href="landing-page.html">Logout</a>
+                        </div>
+                    </div>
+
+                    <ul class="navigation">
+						<li class="navigation__active"><a href="index.html"><i class="flaticon-bar-chart"></i>Dashboard</a></li>
+						
+						<li class="navigation__sub">
+                            <a href="#"><i class="flaticon-bill"></i>Ad Applications <i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+                            <ul>
+                                <li><a href="new_advert.html"><i class="zmdi zmdi-playlist-plus mr-2"></i>New Application</a></li>
+								<li><a href="pending-approvals.html"><i class="mdi mdi-file-clock mdi-icons mr-2"></i>Pending Applications</a></li>
+								<li><a href="approved-applications-report.html"><i class="zmdi zmdi-check-all mr-2"></i>Approved</a></li>
+								<li><a href="assign-plates.html"><i class="mdi mdi-sign-caution"></i>Assign Plate</a></li>
+
+                            </ul>
+						</li>
+					
+						<li class="navigation__active"><a href="receipting-bill.html"><i class="flaticon-invoice"></i>Payment & Receipting</a></li>
+						<li class="navigation__sub">
+                            <a href="#"><i class="mdi mdi-map-marker"></i>Maps<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+                            <ul>
+                                <li><a href="nakuru-live-map.html"><i class="mdi mdi-map-clock mr-2"></i>Live Map</a></li>
+								<li><a href="nakuru-data-map.html"><i class="mdi mdi-map-marker-check mr-2"></i>Revenue HeatMap</a></li>
+                            </ul>
+						</li>
+						<li class="navigation__sub">
+                            <a href="#"><i class="flaticon-document-1"></i>Reports<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+                            <ul>
+								<li class="navigation__sub">
+									<a href="#"><i class="flaticon-bill"></i>Bills<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+									<ul class="ml-2">
+										<li><a href="bill-created.html"><i class="mdi mdi-clipboard-edit-outline mr-2"></i> Created Bills</a></li>
+										<li><a href="unpaid-bills.html"><i class="mdi mdi-cash-remove mr-2"></i> Unpaid Bills</a></li>
+										<li><a href="partial-bills.html"><i class="mdi mdi-cash-multiple mr-2"></i> Partial Bills</a></li>
+										<li><a href="paid-bills.html"><i class="mdi mdi-cash-check mr-2"></i> Paid Bills</a></li>
+										<li><a href="voided-bills.html"><i class="mdi mdi-cash-remove mr-2"></i> Voided Bills</a></li>
+										<li><a href="editted-bills.html"><i class="mdi mdi-cash-lock-open mr-2"></i> Editted Bills</a></li>
+
+									</ul>
+								</li>
+
+								<li class="navigation__sub">
+									<a href="#"><i class="mdi mdi-sign-caution"></i>Plates<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+									<ul class="ml-2">
+										<li><a href="plates.html"><i class="mdi mdi-file-document-edit-outline mr-2"></i> Registered Plates</a></li>
+										<li><a href="rented-plates.html"><i class="mdi mdi-check-box-multiple-outline mr-2"></i> Rented Plates</a></li>
+										<li><a href="available-plates.html"><i class="mdi mdi-check-decagram mr-2"></i> Available Plates</a></li>
+										<li><a href="damaged-plates.html"><i class="mdi mdi-alert-decagram-outline mr-2"></i> Damaged Plates</a></li>
+										<li><a href="due-plates.html"><i class="mdi mdi-alarm-multiple mr-2"></i> Almost Due Plates</a></li>
+										<li><a href="plate-applications.html"><i class="mdi mdi-playlist-edit mr-2"></i> Applications</a></li>
+
+									</ul>
+								</li>
+
+								<li class="navigation__sub">
+									<a href="#"><i class="mdi mdi-billboard"></i>Adverts<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+									<ul class="ml-2">
+										<li><a href="applications-reports.html"><i class="mdi mdi-sticker-outline mr-2"></i> Applications</a></li>
+										<li><a href="approved-applications-report.html"><i class="mdi mdi-checkbox-multiple-marked-circle-outline mr-2"></i> Approved Adverts</a></li>
+										<li><a href="pending-approvals.html"><i class="mdi mdi-clock-alert-outline mr-2"></i> Pending Adverts</a></li>
+										<li><a href="declined-applications-report.html"><i class="mdi mdi-sticker-remove-outline mr-2"></i> Declined Adverts</a></li>
+										<li><a href="active-adverts.html"><i class="mdi mdi-checkbox-multiple-blank-circle mr-2"></i> Active Adverts</a></li>
+										<li><a href="expired-adverts.html"><i class="mdi mdi-stop-circle-outline mr-2"></i> Expired Adverts</a></li>
+										<li><a href="penalized-adverts.html"><i class="mdi mdi-alert-circle-outline mr-2"></i> Penalized Adverts</a></li>
+										<li><a href="advert-types.html"><i class="mdi mdi-checkbox-multiple-blank-outline mr-2"></i> Advert Types</a></li>
+
+									</ul>
+								</li>
+								<li><a href="companies-report.html"><i class="mdi mdi-briefcase"></i>Companies</a></li>
+
+								<li><a href="transactions.html"><i class="mdi mdi-swap-horizontal"></i>Transactions</a></li>
+                            </ul>
+                        </li>
+						<li class="navigation__sub">
+                            <a href="#"><i class="flaticon-user-2"></i>My Account <i class="zmdi zmdi-caret-down drop-down-icon pt-0"></i></a>
+                            <ul>
+                                <li><a href="my-profile.html"><i class="pe-7s-id mr-2"></i>My profile</a></li>
+								<li><a href="account-logs.html"><i class="icon_hourglass mr-2"></i>Account Logs</a></li>
+								<li><a href="deligate.html"><i class="pe-7s-portfolio mr-2"></i>Delegate role</a></li>
+								<li><a href="my-delegations.html"><i class="zmdi zmdi-case-check mr-2"></i>My Delegations</a></li>
+								<li><a href="password.html"><i class="flaticon-forgot mr-2"></i>Change password</a></li>
+								
+                            </ul>
+                        </li>
+												
+						<li class="navigation__sub">
+							<a href="#"><i class="ti-settings"></i>Setup<i class="zmdi zmdi-caret-down drop-down-icon pt-0"></i></a>
+							<ul>
+								<li class="navigation__sub">
+									<a href="#"><i class="flaticon-friends"></i>User Accounts<i class="zmdi zmdi-caret-down drop-down-icon pt-0"></i></a>
+									<ul class="ml-3">
+										<li><a href="new-user.html"><i class="flaticon-add-user mr-2"></i>New user</a></li>
+										<li><a href="active-users.html"><i class="zmdi zmdi-check-all"></i>Active users</a></li>
+										<li><a href="blocked-users.html"><i class="zmdi zmdi-block"></i>Inactive users</a></li>
+										<li><a href="user-management.html"><i class="zmdi zmdi-settings mr-2"></i>User Management</a></li>
+										
+									</ul>
+								</li>
+								<li class="navigation__sub">
+									<a href="#"><i class="mdi mdi-tag-text"></i>Adverts & Billing<i class="zmdi zmdi-caret-down drop-down-icon pt-0"></i></a>
+									<ul class="ml-3">
+										<li><a href="#add-category-modal" data-toggle="modal"><i class="mdi mdi-briefcase-plus"></i>Add Category</a></li>
+										<li><a href="add_advert_type.html"><i class="mdi mdi-billboard"></i>Add Advert Type</a></li>	
+																			
+										
+									</ul>
+                                </li>
+                                
+								<li><a href="add_plate.html"><i class="mdi mdi-map-marker-plus"></i>Add A Plate</a></li>
+								<li><a href="add_company.html"><i class="mdi mdi-briefcase-plus-outline"></i>Add A Company</a></li>	
+
+							</ul>
+                        </li>
+                         <li class="navigation__active mt-4"><a href="landing-page.html"><i class="zmdi zmdi-power"></i>Logout</a></li>
+                    </ul>
+                </div>
+			</aside>
+			
+			<!-- Modals -->
+			<div class="modal modal-sm fade" id="add-category-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add Advert Category</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Enter name of the advert category you wish to add below</p>
+                        <br>
+                        <form class="with-mpesa animated fade-in">
+                            <div class="row" >
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="form-group"> 
+                                        <label>
+                                            <strong>Category Name</strong>  <strong class="text-danger">*</strong>
+                                            <p class="d-none"><small>Category Name</small></p>
+                                        </label>                                                            
+                                        <input type="text" class="form-control" placeholder="Category name" required>
+                                        <br>
+                                    </div>
+                                </div>                              
+                            
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Dismiss</button>
+                    <button type="button" class="btn btn-success btn--icon-text"> <i class="zmdi zmdi-check" ></i>Save</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+			<!-- Modals -->
+		
+            <!-- modalas -->
+            <!-- Button trigger modal -->
+           
+            
+            <!-- Modal -->
+            <!-- editing modal -->
+            <div class="modal fade" id="edit-bill-item" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Edit Billing Item</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Make changes to initially submitted Details</p>
+                        <form class="with-mpesa animated fade-in">
+                            <div class="row" >
+
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label>
+                                            <strong>Account Name</strong>  <strong class="text-danger">*</strong>
+                                            <p class="d-none"><small>Select account name from options below</small></p>
+                                        </label>
+                                        <select class="selectpicker form-control show-tick" data-live-search="true">
+                                            <option data-tokens="select">-- Select Account Name --</option>
+                                            <option data-tokens="option 1">option 1</option>
+                                            <option data-tokens="option 2">option 2</option>
+                                            <option data-tokens="option 3">option 3</option>
+                                            <option data-tokens="option 4">option 4</option>
+                                            
+                                          </select>
+                                          
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label>
+                                            <strong>Income Type</strong>  <strong class="text-danger">*</strong>
+                                            <p class="d-none"><small>Select income type from Drop down</small></p>
+                                        </label>
+                                        <select class="selectpicker form-control show-tick" data-live-search="true">
+                                            <option data-tokens="select">-- Select Income Type --</option>
+                                            <option data-tokens="option 1">option 1</option>
+                                            <option data-tokens="option 2">option 2</option>
+                                            <option data-tokens="option 3">option 3</option>
+                                            <option data-tokens="option 4">option 4</option>
+                                            
+                                          </select>
+                                          
+                                    </div>
+                                </div>  
+                                
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                       <div class="col-sm-12 col-md-6">
+                                           <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>
+                                                        <strong>Sub County</strong>  <strong class="text-danger">*</strong>
+                                                        <p class="d-none"><small>Select income type from Drop down</small></p>
+                                                    </label>
+                                                    <select class="selectpicker form-control show-tick" data-live-search="true">
+                                                        <option data-tokens="select">-- Select sub county --</option>
+                                                        <option data-tokens="option 1">option 1</option>
+                                                        <option data-tokens="option 2">option 2</option>
+                                                        <option data-tokens="option 3">option 3</option>
+                                                        <option data-tokens="option 4">option 4</option>
+                                                        
+                                                      </select>
+                                                      
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>
+                                                        <strong>Ward</strong>  <strong class="text-danger">*</strong>
+                                                        <p class="d-none"><small>Select income type from Drop down</small></p>
+                                                    </label>
+                                                    <select class="selectpicker form-control show-tick" data-live-search="true">
+                                                        <option data-tokens="select">-- Select ward --</option>
+                                                        <option data-tokens="option 1">option 1</option>
+                                                        <option data-tokens="option 2">option 2</option>
+                                                        <option data-tokens="option 3">option 3</option>
+                                                        <option data-tokens="option 4">option 4</option>
+                                                        
+                                                      </select>
+                                                      
+                                                </div>
+                                                
+                                            </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-sm-12 col-md-6">
+                                            <div class="form-group"> 
+                                                <label>
+                                                    <strong>Brief Description</strong>  <strong class="text-danger">*</strong>
+                                                </label>                                                            
+                                                <textarea class="form-control  text-counter  pl-3 pt-3" placeholder="Start typing..." required style="height: 134px;"></textarea>
+                                            </div>
+                                       </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="form-group"> 
+                                        <label>
+                                            <strong>Amount</strong>  <strong class="text-danger">*</strong>
+                                            <p class="d-none"><small>Enter amount to be paid</small></p>
+                                        </label>                                                            
+                                        <input type="text" class="form-control" placeholder="Enter amount" required>
+                                    </div>
+                                </div>
+                               
+                               
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Dismiss</button>
+                    <button type="button" class="btn btn-success btn--icon-text"> <i class="zmdi zmdi-check" ></i>Save changes</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- editing modal end -->
+
+            <!-- deleting modal -->
+            <div class="modal fade" id="remove-bill-item" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-danger text-white py-3">
+                    <h5 class="modal-title text-white" id="exampleModalLongTitle">Remove Bill Item</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Rent-Eastlands</h4>
+                       <div class="warning-container">
+                           <img src="demo/img/form-svgs/forbidden.png">
+                        <p class="font-16">
+                            Are you sure you want to remove this bill Item?
+                            Notice, you cant reverse the changes.
+                        </p>
+                       </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">No, Dont remove</button>
+                    <button type="button" class="btn btn-danger btn--icon-text text-white"> <i class="ti-trash mr-3" ></i>Yes, I want to remove it</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- deleting modal -->
+
+             <!-- more bill item details modal -->
+             <div class="modal fade" id="more-bill-details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">More details about the Billing Item</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                       <div>
+                           <h6><strong>Account Name</strong></h6>
+                           <p>The account Name goes here</p>
+                           <hr>
+
+                           <h6><strong>Income Type</strong></h6>
+                           <p>Income type goes here</p>
+                           <hr>
+
+                           <div class="row">
+                                <div class="col-6">
+                                    <h6><strong>Sub County</strong></h6>
+                                    <p>Sub county goes here</p>
+                                </div>
+
+                                <div class="col-6">
+                                    <h6><strong>Ward</strong></h6>
+                                    <p>The ward name goes here</p>
+                                </div>
+                           </div>
+                           <hr>
+
+                                <h6><strong>Brief Description</strong></h6>
+                                <p>Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a display heading - a larger, slightly more opinionated heading style.</p>
+                                <hr>
+                                <h6><strong>Amount</strong></h6>
+                               <h3>KES 12,200</h3>
+                           
+                       </div>                       
+                    </div>
+                    <div class="modal-footer">
+                    
+                    <button type="button" class="btn btn-success btn--icon-text px-5">OK</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- more bill item details -->
+
+            <!-- modals -->
+			 <section class="content">
+                <header class="content__title px-0 border-0">
+				 	<div class="row">
+						<div class="col-md-6 col-sm-12">
+							<span class="rev-title-container">
+							 <h1 class="text-capitalize stream_name m-0">Create New Bill</h1>
+							</span>
+							<div class="">
+								<ol class="breadcrumb border-0">
+									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+									<li class="breadcrumb-item active">New Bill</li>
+								
+								</ol>
+								
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-12 text-right text-white"></div>
+					</div>
+				</header>
+				<div class="row with-custom-header">					
+					<div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 col-sm-12">
+                                        <div class="bill-details">
+                                            <div class="contact-header">
+                                                <h4>Billing items</h4>
+                                                <hr>
+                                            </div>
+                                            
+                                            <form class="with-mpesa animated fade-in">
+                                                <div class="row" >
+
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                <strong>Account Name</strong>  <strong class="text-danger">*</strong>
+                                                                <p class="d-none"><small>Select account name from options below</small></p>
+                                                            </label>
+                                                            <select class="selectpicker form-control show-tick" data-live-search="true">
+                                                                <option data-tokens="select">-- Select Account Name --</option>
+                                                                <option data-tokens="option 1">option 1</option>
+                                                                <option data-tokens="option 2">option 2</option>
+                                                                <option data-tokens="option 3">option 3</option>
+                                                                <option data-tokens="option 4">option 4</option>
+                                                                
+                                                              </select>
+                                                              
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                <strong>Income Type</strong>  <strong class="text-danger">*</strong>
+                                                                <p class="d-none"><small>Select income type from Drop down</small></p>
+                                                            </label>
+                                                            <select class="selectpicker form-control show-tick" data-live-search="true">
+                                                                <option data-tokens="select">-- Select Income Type --</option>
+                                                                <option data-tokens="option 1">option 1</option>
+                                                                <option data-tokens="option 2">option 2</option>
+                                                                <option data-tokens="option 3">option 3</option>
+                                                                <option data-tokens="option 4">option 4</option>
+                                                                
+                                                              </select>
+                                                              
+                                                        </div>
+                                                    </div>  
+                                                    
+                                                    <div class="col-sm-12">
+                                                        <div class="row">
+                                                           <div class="col-sm-12 col-md-6">
+                                                               <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group">
+                                                                        <label>
+                                                                            <strong>Sub County</strong>  <strong class="text-danger">*</strong>
+                                                                            <p class="d-none"><small>Select income type from Drop down</small></p>
+                                                                        </label>
+                                                                        <select class="selectpicker form-control show-tick" data-live-search="true">
+                                                                            <option data-tokens="select">-- Select sub county --</option>
+                                                                            <option data-tokens="option 1">option 1</option>
+                                                                            <option data-tokens="option 2">option 2</option>
+                                                                            <option data-tokens="option 3">option 3</option>
+                                                                            <option data-tokens="option 4">option 4</option>
+                                                                            
+                                                                          </select>
+                                                                          
+                                                                    </div>
+    
+                                                                </div>
+    
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group">
+                                                                        <label>
+                                                                            <strong>Ward</strong>  <strong class="text-danger">*</strong>
+                                                                            <p class="d-none"><small>Select income type from Drop down</small></p>
+                                                                        </label>
+                                                                        <select class="selectpicker form-control show-tick" data-live-search="true">
+                                                                            <option data-tokens="select">-- Select ward --</option>
+                                                                            <option data-tokens="option 1">option 1</option>
+                                                                            <option data-tokens="option 2">option 2</option>
+                                                                            <option data-tokens="option 3">option 3</option>
+                                                                            <option data-tokens="option 4">option 4</option>
+                                                                            
+                                                                          </select>
+                                                                          
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                               </div>
+                                                           </div>
+                                                           <div class="col-sm-12 col-md-6">
+                                                                <div class="form-group"> 
+                                                                    <label>
+                                                                        <strong>Brief Description</strong>  <strong class="text-danger">*</strong>
+                                                                    </label>                                                            
+                                                                    <textarea class="form-control  text-counter  pl-3 pt-3" placeholder="Start typing..." required style="height: 134px;"></textarea>
+                                                                </div>
+                                                           </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="col-md-12 col-sm-12">
+                                                        <div class="form-group"> 
+                                                            <label>
+                                                                <strong>Amount</strong>  <strong class="text-danger">*</strong>
+                                                                <p class="d-none"><small>Enter amount to be paid</small></p>
+                                                            </label>                                                            
+                                                            <input type="text" class="form-control" placeholder="Enter amount" required>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                    <div class="col-12">
+                                                        <button class="btn btn-secondary text-uppercase w-100 d-flex justify-content-center align-items-center">Add to bill<i class="icon-list-add font-22 ml-3"></i></button>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </form>
+                                           
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-5 col-lg-5">
+                                        <div class="bill-cart">
+                                            <div class="contact-header">
+                                                <h4>Bill Details</h4>
+                                                <hr>
+                                            </div>
+                                            <table class="table bill-details-table table-hover table-sm">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Fee Description</th>
+                                                    <th scope="col">Acc No.</th>
+                                                    <th scope="col">Amt</th>
+                                                    <th></th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>
+                                                        <strong>Rent-Eastlands</strong><br>
+                                                        <span>0503-01-00</span>
+                                                    </td>
+                                                    <td>1-6106</td>
+                                                    <td>4,000</td>
+                                                    <th>
+                                                        <span class="table-action action-success mx-2"  data-toggle="tooltip" data-original-title="More details"><i data-toggle="modal" data-target="#more-bill-details" class="ti-more-alt"></i></span>
+                                                        <span class="table-action action-success mx-2"  data-toggle="tooltip" data-original-title="Edit bill item"><i data-toggle="modal" data-target="#edit-bill-item" class="ti-pencil"></i></span>
+                                                        <span class="table-action action-danger" data-toggle="tooltip" data-original-title="Remove bill item"><i data-toggle="modal" data-target="#remove-bill-item" class="ti-close"></i> </span>                                                     
+
+                                                    </th>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>
+                                                        <strong>Rent-Eastlands</strong><br>
+                                                        <span>0503-01-00</span>
+                                                    </td>
+                                                    <td>1-6106</td>
+                                                    <td>4,000</td>
+                                                    <th>
+                                                        <span class="table-action action-success mx-2"  data-toggle="tooltip" data-original-title="More details"><i data-toggle="modal" data-target="#more-bill-details" class="ti-more-alt"></i></span>
+                                                        <span class="table-action action-success mx-2"  data-toggle="tooltip" data-original-title="Edit bill item"><i data-toggle="modal" data-target="#edit-bill-item" class="ti-pencil"></i></span>
+                                                        <span class="table-action action-danger" data-toggle="tooltip" data-original-title="Remove bill item"><i data-toggle="modal" data-target="#remove-bill-item" class="ti-close"></i> </span>                                                     
+
+                                                    </th>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>
+                                                        <strong>Rent-Eastlands</strong><br>
+                                                        <span>0503-01-00</span>
+                                                    </td>
+                                                    <td>1-6106</td>
+                                                    <td>4,000</td>
+                                                    <th>
+                                                        <span class="table-action action-success mx-2"  data-toggle="tooltip" data-original-title="More details"><i data-toggle="modal" data-target="#more-bill-details" class="ti-more-alt"></i></span>
+                                                        <span class="table-action action-success mx-2"  data-toggle="tooltip" data-original-title="Edit bill item"><i data-toggle="modal" data-target="#edit-bill-item" class="ti-pencil"></i></span>
+                                                        <span class="table-action action-danger" data-toggle="tooltip" data-original-title="Remove bill item"><i data-toggle="modal" data-target="#remove-bill-item" class="ti-close"></i> </span>                                                     
+
+                                                    </th>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>
+                                                        <strong>Rent-Eastlands</strong><br>
+                                                        <span>0503-01-00</span>
+                                                    </td>
+                                                    <td>1-6106</td>
+                                                    <td>4,000</td>
+                                                    <th>
+                                                        <span class="table-action action-success mx-2"  data-toggle="tooltip" data-original-title="More details"><i data-toggle="modal" data-target="#more-bill-details" class="ti-more-alt"></i></span>
+                                                        <span class="table-action action-success mx-2"  data-toggle="tooltip" data-original-title="Edit bill item"><i data-toggle="modal" data-target="#edit-bill-item" class="ti-pencil"></i></span>
+                                                        <span class="table-action action-danger" data-toggle="tooltip" data-original-title="Remove bill item"><i data-toggle="modal" data-target="#remove-bill-item" class="ti-close"></i> </span>                                                     
+
+                                                    </th>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <th scope="row">5</th>
+                                                    <td>
+                                                        <strong>Rent-Eastlands</strong><br>
+                                                        <span>0503-01-00</span>
+                                                    </td>
+                                                    <td>1-6106</td>
+                                                    <td>4,000</td>
+                                                    <th>
+                                                        <span class="table-action action-success mx-2"  data-toggle="tooltip" data-original-title="More details"><i data-toggle="modal" data-target="#more-bill-details" class="ti-more-alt"></i></span>
+                                                        <span class="table-action action-success mx-2"  data-toggle="tooltip" data-original-title="Edit bill item"><i data-toggle="modal" data-target="#edit-bill-item" class="ti-pencil"></i></span>
+                                                        <span class="table-action action-danger" data-toggle="tooltip" data-original-title="Remove bill item"><i data-toggle="modal" data-target="#remove-bill-item" class="ti-close"></i> </span>                                                     
+
+                                                    </th>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            
+                                        </div>
+                                        <div class="bill-total  py-3">
+                                            <div class="text-left">
+                                                <span class=" font-weight-light font-22">5 Items</span>
+                                            </div>
+                                            <div class="text-right">
+                                                <small class="text-muted-blue bold bold">Total bill Amount</small>
+									            <div class=""><h4 class="font-weight-bold">KES 258,203</h4></div>
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>
+
+                                    <div class="col-md-3 col-lg-3 col-sm-12">
+                                        <div class="bill-details h-100 bill-checkout">
+                                            <div class="contact-header">
+                                                <h4>Customer details</h4>
+                                                <hr>
+                                            </div>
+                                            
+                                            <form class= "animated fade-in">
+                                                <div class="row h-100 position-relative" >                                                   
+
+                                                   <div class="form-items w-100">
+                                                    <div class="col-md-12 col-sm-12">
+                                                        <div class="form-group"> 
+                                                            <label>
+                                                                <strong>Custmer's Name</strong>  <strong class="text-danger">*</strong>
+                                                            </label>                                                            
+                                                            <input type="text" class="form-control  pl-3" placeholder="Enter customer's name" required>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-12 col-sm-12">
+                                                        <div class="form-group"> 
+                                                            <label>
+                                                                <strong>ID Num/ PP Num.</strong>  <strong class="text-danger">*</strong>
+                                                            </label>                                                            
+                                                            <input type="text" class="form-control  pl-3" placeholder="Enter customer's Id Number">
+                                                        </div>
+                                                    </div>
+                                                   </div>
+                                                   
+                                                    <div class="col-12 submit-btn-container">
+                                                        <button class="btn btn-success text-uppercase w-100 btn-big "><span class="font-12px">Generate Bill</span><i class="ml-3 flaticon-bill font-18"></i></button>
+                                                        <center class="py-3"><span class="py-3">- OR -</span></center>
+                                                        <button class="btn btn-dark text-uppercase w-100" title="use this option to bind this item to an already existing bill"><span class="font-12px">Bind to existing bill</span><i class="ml-3 ti-link font-18"></i></button>
+                                                        <center class="py-3"><span class="py-3">- OR -</span></center>
+                                                        <div class="continue-billing ">
+                                                            <span class="d-none" data-toggle="dropdown">Continue Billing</span>
+                                                            <div class="dropdown actions__item">
+                                                               
+                                                                <span data-toggle="dropdown" > <span class="mr-2">Continue Billing </span><i class="zmdi zmdi-chevron-down"></i></span>
+                                                                <div class="dropdown-menu dropdown-menu-right">
+                                                                    <a href="rents.html" class="dropdown-item">Rents</a>
+                                                                    <a href="business.html" class="dropdown-item">Business permits</a>
+                                                                    <a href="land-rates.html" class="dropdown-item">Land Rates</a>
+                                                                    <a href="new-bill.html" class="dropdown-item">Other Bills</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                  
+				</div>
+			
+                <footer class="footer hidden-xs-down">
+                    <p>Powered by RevenueSure</p>
+                </footer>
+            </section>
+        </main>
+
+        <!-- Older IE warning message -->
+            <!--[if IE]>
+                <div class="ie-warning">
+                    <h1>Warning!!</h1>
+                    <p>You are using an outdated version of Internet Explorer, please upgrade to any of the following web browsers to access this website.</p>
+
+                    <div class="ie-warning__downloads">
+                        <a href="http://www.google.com/chrome">
+                            <img src="img/browsers/chrome.png" alt="">
+                        </a>
+
+                        <a href="https://www.mozilla.org/en-US/firefox/new">
+                            <img src="img/browsers/firefox.png" alt="">
+                        </a>
+
+                        <a href="http://www.opera.com">
+                            <img src="img/browsers/opera.png" alt="">
+                        </a>
+
+                        <a href="https://support.apple.com/downloads/safari">
+                            <img src="img/browsers/safari.png" alt="">
+                        </a>
+
+                        <a href="https://www.microsoft.com/en-us/windows/microsoft-edge">
+                            <img src="img/browsers/edge.png" alt="">
+                        </a>
+
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="img/browsers/ie.png" alt="">
+                        </a>
+                    </div>
+                    <p>Sorry for the inconvenience!</p>
+                </div>
+            <![endif]-->
+
+        <!-- Javascript -->
+        <!-- Vendors -->
+        <script src="vendors/jquery/jquery.min.js"></script>
+        <script src="vendors/popper.js/popper.min.js"></script>
+        <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+
+        <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+
+        <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+
+        <script src="vendors/flot/jquery.flot.js"></script>        <script src="vendors/flot/jquery.flot.resize.js"></script>
+        <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+        <script src="vendors/jqvmap/jquery.vmap.min.js"></script>
+        <script src="vendors/jqvmap/maps/jquery.vmap.world.js"></script>
+        <script src="vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
+        <script src="vendors/salvattore/salvattore.min.js"></script>
+        <script src="vendors/sparkline/jquery.sparkline.min.js"></script>
+        <script src="vendors/moment/moment.min.js"></script>
+        <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+		
+		 <script src="vendors/jquery-mask-plugin/jquery.mask.min.js"></script>
+        <script src="vendors/select2/js/select2.full.min.js"></script>
+        <script src="vendors/dropzone/dropzone.min.js"></script>
+        <script src="vendors/moment/moment.min.js"></script>
+        <script src="vendors/nouislider/nouislider.min.js"></script>
+        <script src="vendors/trumbowyg/trumbowyg.min.js"></script>
+        <script src="vendors/flatpickr/flatpickr.min.js"></script>
+        <script src="vendors/rateyo/jquery.rateyo.min.js"></script>
+        <script src="vendors/jquery-text-counter/textcounter.min.js"></script>
+        <script src="vendors/autosize/autosize.min.js"></script>
+        <script src="vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+
+        <!-- Charts and maps-->
+        <script src="demo/js/flot-charts/curved-line.js"></script>
+        <script src="demo/js/flot-charts/dynamic.js"></script>
+        <script src="demo/js/flot-charts/line.js"></script>
+        <script src="demo/js/flot-charts/chart-tooltips.js"></script>
+        <script src="demo/js/other-charts.js"></script>
+        <script src="demo/js/jqvmap.js"></script>
+		
+		<!--high chart-->
+		<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+		<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+
+		<script src="vendors/highcharts/highchart.js"></script>
+		<script src="vendors/highcharts/data.js"></script>
+		<script src="vendors/highcharts/drilldown.js"></script>
+		<script src="vendors/highcharts/exporting.js"></script>
+		<script src="vendors/highcharts/export-data.js"></script>
+		<script src="vendors/highcharts/accesibility.js"></script>
+		<script src="js/highcharts/bullet.js"></script>
+		
+		<script src="js/highcharts/highcharts-more.js"></script>
+		<script src="js/highcharts/theme1.js"></script>
+		<!--owl corousel-->
+		<script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
+
+
+        <!-- App functions and actions -->
+     	<script src="js/wow.js"></script>
+        <script src="js/app.min.js"></script>
+        <script src="js/main.js"></script>
+		
+        <script src="js/chart-data/revenue-targets.js"></script>
+        <script src="js/chart-data/revenue-streams.js"></script>
+		 <script src="js/chart-data/revenue-by-bank.js"></script>
+        <script src="js/chart-data/revenue-collected.js"></script>
+        <script src="js/chart-data/perfomance.js"></script>
+	
+		<!--map scripts-->
+		
+		<script src="js/chart-data/map-data.js"></script>
+		
+       
+		
+		
+		
+    </body>
+
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:43 GMT -->
+</html>
